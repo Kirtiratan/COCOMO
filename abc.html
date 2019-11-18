@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>COCOMO-II Simulator</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body >
+<u><h1>COCOMO-II</h1></u>
+</br>
+<h2>Effective Factors:</h2>
+<p>Every factor will make change in the cost and development time of software.(0 - No Influence,
+1 - Incidental,
+2 - Moderate,
+3 - Average,
+4 - Significant,
+5 - Essential ).
+<form id="parameters">
+<div class="A">Parameters</div>
+
+<pre style="display:inline;margin-left:10%"> 0  1   2   3  4   5</pre>
+</br></br>
+<div class="A">Backup and Recovery</div>
+<div class="B">
+<input type="radio" value="0" name="p1" checked>
+<input type="radio" value="1" name="p1" >
+<input type="radio" value="2" name="p1" >
+<input type="radio" value="3" name="p1" >
+<input type="radio" value="4" name="p1" >
+<input type="radio" value="5" name="p1" >
+</div>
+</br></br>
+<div class="A">Data Communication</div>
+<div class="B">
+<input type="radio" value="0" name="p2" checked>
+<input type="radio" value="1" name="p2">
+<input type="radio" value="2" name="p2">
+<input type="radio" value="3" name="p2">
+<input type="radio" value="4" name="p2">
+<input type="radio" value="5" name="p2" >
+</div>
+</br></br>
+<div class="A">Distributed Processing Functions</div>
+<div class="B">
+<input type="radio" value="0" name="p3" checked>
+<input type="radio" value="1" name="p3">
+<input type="radio" value="2" name="p3">
+<input type="radio" value="3" name="p3">
+<input type="radio" value="4" name="p3">
+<input type="radio" value="5" name="p3" >
+</div>
+</br></br>
+<div class="A">Performance Critical</div>
+<div class="B">
+<input type="radio" value="0" name="p4" checked>
+<input type="radio" value="1" name="p4">
+<input type="radio" value="2" name="p4">
+<input type="radio" value="3" name="p4">
+<input type="radio" value="4" name="p4">
+<input type="radio" value="5" name="p4" >
+</div>
+</br></br>
+<div class="A">Heavy Operational Environment</div>
+<div class="B">
+<input type="radio" value="0" name="p5" checked>
+<input type="radio" value="1" name="p5">
+<input type="radio" value="2" name="p5">
+<input type="radio" value="3" name="p5">
+<input type="radio" value="4" name="p5">
+<input type="radio" value="5" name="p5" >
+</div>
+</br></br>
+<div class="A">On-line Data Entry</div>
+<div class="B">
+<input type="radio" value="0" name="p6" checked>
+<input type="radio" value="1" name="p6">
+<input type="radio" value="2" name="p6">
+<input type="radio" value="3" name="p6">
+<input type="radio" value="4" name="p6">
+<input type="radio" value="5" name="p6" >
+</div>
+</br></br>
+<div class="A">Multiple Screens/Operations</div>
+<div class="B">
+<input type="radio" value="0" name="p7" checked>
+<input type="radio" value="1" name="p7">
+<input type="radio" value="2" name="p7">
+<input type="radio" value="3" name="p7">
+<input type="radio" value="4" name="p7">
+<input type="radio" value="5" name="p7" >
+</div>
+</br></br>
+<div class="A">Master file Update On-line</div>
+<div class="B">
+<input type="radio" value="0" name="p8" checked>
+<input type="radio" value="1" name="p8">
+<input type="radio" value="2" name="p8">
+<input type="radio" value="3" name="p8">
+<input type="radio" value="4" name="p8">
+<input type="radio" value="5" name="p8" >
+</div>
+</br></br>
+<div class="A">Complexity of Inputs/Outputs</div>
+<div class="B">
+<input type="radio" value="0" name="p9" checked>
+<input type="radio" value="1" name="p9">
+<input type="radio" value="2" name="p9">
+<input type="radio" value="3" name="p9">
+<input type="radio" value="4" name="p9">
+<input type="radio" value="5" name="p9" >
+</div>
+</br></br>
+<div class="A">Internal Processing</div>
+<div class="B">
+<input type="radio" value="0" name="p10" checked>
+<input type="radio" value="1" name="p10">
+<input type="radio" value="2" name="p10">
+<input type="radio" value="3" name="p10">
+<input type="radio" value="4" name="p10">
+<input type="radio" value="5" name="p10" >
+</div>
+</br></br>
+<div class="A">Code Reusability</div>
+<div class="B">
+<input type="radio" value="0" name="p11" checked>
+<input type="radio" value="1" name="p11">
+<input type="radio" value="2" name="p11">
+<input type="radio" value="3" name="p11">
+<input type="radio" value="4" name="p11">
+<input type="radio" value="5" name="p11" >
+</div>
+</br></br>
+<div class="A">Conversion and Installation</div>
+<div class="B">
+<input type="radio" value="0" name="p12" checked>
+<input type="radio" value="1" name="p12">
+<input type="radio" value="2" name="p12">
+<input type="radio" value="3" name="p12">
+<input type="radio" value="4" name="p12">
+<input type="radio" value="5" name="p12" >
+</div>
+</br></br>
+<div class="A">Multiple Installation</div>
+<div class="B">
+<input type="radio" value="0" name="p13" checked>
+<input type="radio" value="1" name="p13">
+<input type="radio" value="2" name="p13">
+<input type="radio" value="3" name="p13">
+<input type="radio" value="4" name="p13">
+<input type="radio" value="5" name="p13" >
+</div>
+</br></br>
+<div class="A">Ease of Use</div>
+<div class="B">
+<input type="radio" value="0" name="p14" checked>
+<input type="radio" value="1" name="p14">
+<input type="radio" value="2" name="p14">
+<input type="radio" value="3" name="p14">
+<input type="radio" value="4" name="p14">
+<input type="radio" value="5" name="p14" >
+</div>
+</br></br>
+</form>
+
+
+
+
+<h2>UFP:-</h2>
+<p>Transition of data in the form of input,outpit, queries and updation of logical files(internal and external) have some cost associated with it.
+Cost varies from low to high as the complexity of inputs/outputs and queries increases.</p>
+<table style="width:60%;margin-left:20%">
+  <tr>
+    <th>Function name</th>
+    <th>Simple</th> 
+    <th>Average</th>
+	<th>Complex</th>
+  </tr>
+  <tr>
+    <th>External Input(s)</th>
+	<td><input type="text" value="0" id="a1"></td>
+	<td><input type="text" value="0" id="a2"></td>
+	<td><input type="text" value="0" id="a3"></td>
+  </tr>
+  <tr>
+    <th>External Output(s)</th>
+	<td><input type="text" value="0" id="a4"></td>
+	<td><input type="text" value="0" id="a5"></td>
+	<td><input type="text" value="0" id="a6"></td>
+  </tr>
+  <tr>
+    <th>External Query(ies)</th>
+	<td><input type="text" value="0" id="a7"></td>
+	<td><input type="text" value="0" id="a8"></td>
+	<td><input type="text" value="0" id="a9"></td>
+  </tr>
+  <tr>
+    <th>Internal Logical File(s)</th>
+	<td><input type="text" value="0" id="a10"></td>
+	<td><input type="text" value="0" id="a11"></td>
+	<td><input type="text" value="0" id="a12"></td>
+  </tr>
+  <tr>
+    <th>External Logical File(s)</th>
+	<td><input type="text" value="0" id="a13"></td>
+	<td><input type="text" value="0" id="a14"></td>
+	<td><input type="text" value="0" id="a15"></td>
+  </tr>
+</table>
+</br>
+<h3>Language:</h3>
+<form id="lf">
+<table style="width:30%;margin-left:35%" >
+<tr>
+<th>Languages</th>
+<th>Choose one</th>
+</tr>
+<tr>
+<th>C</th>
+<td><input type="radio" value="97" name="lang" checked></td>
+</tr>
+<tr>
+<th>C++</th>
+<td><input type="radio" value="50" name="lang"></td>
+</tr>
+<tr>
+<th>C#</th>
+<td><input type="radio" value="54" name="lang"></td>
+</tr>
+<tr>
+<th>Java</th>
+<td><input type="radio" value="53" name="lang"></td>
+</tr>
+<tr>
+<th>Perl</th>
+<td><input type="radio" value="24" name="lang"></td>
+</tr>
+<tr>
+<th>JavaScript</th>
+<td><input type="radio" value="47" name="lang" ></td>
+</tr>
+</table>
+</form>
+<h3>Type of Software:</h3>
+<form id="tos">
+<div style="margin-left:35%;display:inline-block;width:100px">Organic</div>
+<input type="radio" value="1" name="type">
+</br>
+<div style="margin-left:35%;display:inline-block;width:100px">Semi-detached</div>
+<input type="radio" value="2" name="type">
+</br>
+<div style="margin-left:35%;display:inline-block;width:100px;">Embedded</div>
+<input type="radio" value="3" name="type">
+</form>
+<p style="display:inline-block;margin-left:35%;">Average Salary(in $)</p>
+<input type="text" id="sal">
+<h3>Output:</h3>
+<table style="width:30%;margin-left:35%">
+<tr>
+<th>Function-point</th>
+<td id="fp" style="width:25%;color:white"></td>
+</tr>
+<tr>
+<th>Development Time(in Months)</th>
+<td id="dt" style="width:25%;color:white"></td>
+</tr>
+<tr>
+<th>Cost(in $)</th>
+<td id="cost" style="width:25%;color:white"></td>
+</tr>
+</table>
+</br>
+</br>
+<input type="button" onclick="sum()" value="Calculate" id="d">
+<script src="script.js"></script>
+</body>
+</html>

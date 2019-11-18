@@ -1,0 +1,30 @@
+body{
+	background-color:silver;
+}
+.A{
+	background-color:gray;
+	width:25%;
+	border: 1px solid black;
+	display:inline-block;
+	margin-left:20%;
+}
+.B{
+	background-color:gray;
+	border: 1px solid black;
+	display:inline-block;
+	margin-left:10%;
+}
+
+h1{
+	text-align:center;
+}
+#c,#d{
+	margin-left:43%;
+}
+table, th, td {
+	background-color:black;
+	color:white;
+	text-align:left;
+	border: 1px solid gray;
+	border-collapse: collapse;
+}
